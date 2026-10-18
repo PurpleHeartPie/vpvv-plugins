@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "updatedAt": "2026-10-18",
+  "plugins": [
+    {
+      "id": "listen-stats",
+      "name": "收听统计",
+      "version": "1.0.0",
+      "apiLevel": 1,
+      "minApp": "1.6.0",
+      "author": "vpvvMusic 示例",
+      "description": "记录最近 7 天每天听了多少首、一共听了多久。数据只写在本机插件自己的配置里，不联网。",
+      "permissions": ["player.read", "library.read", "config.write"],
+      "changelog": "首个版本。",
+      "download": "https://raw.githubusercontent.com/PurpleHeartPie/vpvv-plugins/main/listen-stats-1.0.0.zip",
+      "sha256": "ad2bb13841e9564deb238ffcf488fd4bded53d5c712f674e09c2dfc26e8ae7f1",
+      "size": 8634
+    }
+  ]
+}
