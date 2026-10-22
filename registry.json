@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "updatedAt": "2026-10-18",
+  "updatedAt": "2026-10-22",
   "plugins": [
     {
       "id": "listen-stats",
@@ -10,11 +10,31 @@
       "minApp": "1.6.0",
       "author": "vpvvMusic 示例",
       "description": "记录最近 7 天每天听了多少首、一共听了多久。数据只写在本机插件自己的配置里，不联网。",
-      "permissions": ["player.read", "library.read", "config.write"],
+      "permissions": [
+        "player.read",
+        "library.read",
+        "config.write"
+      ],
       "changelog": "首个版本。",
       "download": "https://raw.githubusercontent.com/PurpleHeartPie/vpvv-plugins/main/listen-stats-1.0.0.zip",
       "sha256": "ad2bb13841e9564deb238ffcf488fd4bded53d5c712f674e09c2dfc26e8ae7f1",
       "size": 8634
+    },
+    {
+      "id": "play-history",
+      "name": "历史播放",
+      "version": "1.0.0",
+      "apiLevel": 1,
+      "minApp": "2.0.6",
+      "author": "vpvvMusic",
+      "description": "按时间倒序列出最近播放过的曲目，按天分组。数据来自主程序的播放记录，只读。",
+      "permissions": [
+        "library.read"
+      ],
+      "changelog": "首个版本。需要主程序 2.0.6 及以上（新增 library.history 接口）。",
+      "download": "https://raw.githubusercontent.com/PurpleHeartPie/vpvv-plugins/main/play-history-1.0.0.zip",
+      "sha256": "1ef40d58cc690f793afe7a8e1fe2966d2c2d60593726c49759931ae0a83ba513",
+      "size": 9006
     }
   ]
 }
